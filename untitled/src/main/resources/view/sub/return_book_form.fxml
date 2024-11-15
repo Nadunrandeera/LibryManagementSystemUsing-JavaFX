@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="568.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.codeschool.libry_management_system.controller.controller.sub.ReturnBookController">
+   <children>
+      <TextField fx:id="txtSearchKeyword" layoutX="29.0" layoutY="35.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter KeyWord To Search" />
+      <RadioButton fx:id="rbBookID" layoutX="243.0" layoutY="39.0" mnemonicParsing="false" text="Book ID">
+         <toggleGroup>
+            <ToggleGroup fx:id="txt" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbMemberID" layoutX="320.0" layoutY="39.0" mnemonicParsing="false" text="Member ID" toggleGroup="$txt" />
+      <RadioButton fx:id="rbMobileNumber" layoutX="416.0" layoutY="39.0" mnemonicParsing="false" text="Member Mobile Number" toggleGroup="$txt" />
+      <TableView fx:id="tblNotReturnBookRecord" layoutX="29.0" layoutY="84.0" prefHeight="320.0" prefWidth="639.0">
+        <columns>
+          <TableColumn fx:id="colRecordID" prefWidth="75.0" text="Record ID" />
+          <TableColumn fx:id="colBookID" prefWidth="77.0" text="Book ID" />
+            <TableColumn fx:id="colBookName" prefWidth="136.0" text="Book Name" />
+            <TableColumn fx:id="colMemberID" prefWidth="85.0" text="Member ID" />
+            <TableColumn fx:id="colMemberName" prefWidth="133.0" text="Member Name" />
+            <TableColumn fx:id="colReturnDate" prefWidth="132.0" text="Return Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="29.0" layoutY="428.0" prefHeight="17.0" prefWidth="111.0" text="Late Date Count :" />
+      <Label fx:id="LateDateCount" layoutX="122.0" layoutY="420.0" prefHeight="33.0" prefWidth="49.0" />
+      <TextField fx:id="txtFindForOneDay" layoutX="29.0" layoutY="453.0" prefHeight="25.0" prefWidth="154.0" promptText="Fine for one day" />
+      <Label layoutX="29.0" layoutY="486.0" prefHeight="17.0" prefWidth="111.0" text="Fine" />
+      <Label fx:id="lblFine" layoutX="122.0" layoutY="478.0" prefHeight="33.0" prefWidth="49.0" />
+      <Button layoutX="493.0" layoutY="453.0" mnemonicParsing="false" onAction="#btnMarkAsReturnOnAction" prefHeight="25.0" prefWidth="132.0" text="Mark As Returned" />
+      <TextField fx:id="txtPayment" layoutX="29.0" layoutY="511.0" prefHeight="25.0" prefWidth="154.0" promptText="Payment" />
+      <Label layoutX="494.0" layoutY="495.0" prefHeight="17.0" prefWidth="63.0" text="Balance :" />
+      <Label fx:id="lblBalance" layoutX="550.0" layoutY="487.0" prefHeight="33.0" prefWidth="49.0" />
+   </children>
+</AnchorPane>

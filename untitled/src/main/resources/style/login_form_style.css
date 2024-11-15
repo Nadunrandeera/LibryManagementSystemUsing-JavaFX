@@ -1,0 +1,27 @@
+#subAnchorpane1{
+    -fx-background-color: #3C3939;
+}
+#subAnchorpane2,#SignUpMainPane{
+    -fx-background-color: #FAF3F3;
+}
+#mainSubAnchorpane{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.8),5,0.5,2,2);
+}
+.round-corner{
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+}
+.round-button-black{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: #3B3939;
+    -fx-text-fill: white;
+}
+.round-button-black:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(102, 187, 167, 0.8),10,0.8,0,0);
+}
+.round-button-black:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(65, 113, 189, 0.8),10,0.8,0,0);
+}

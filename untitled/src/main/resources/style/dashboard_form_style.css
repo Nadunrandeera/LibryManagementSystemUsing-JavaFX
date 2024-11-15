@@ -1,0 +1,29 @@
+#mainButtonPane{
+    -fx-background-color: #3B3939;
+}
+.side_corner_round_button{
+    -fx-background-color: white;
+    -fx-background-radius: 20px 0 0 20px;
+}
+.sub_pane{
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 20px;
+}
+.round-button-black{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: #3B3939;
+    -fx-text-fill: white;
+}
+.round-button-black:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(102, 187, 167, 0.8),10,0.8,0,0);
+}
+.round-button-black:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(65, 113, 189, 0.8),10,0.8,0,0);
+}
+.side_corner_round_button:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(102, 187, 167, 0.8),10,0.8,-4,0);
+}
+.side_corner_round_button:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(65, 113, 189, 0.8),10,0.8,-4,0);
+}

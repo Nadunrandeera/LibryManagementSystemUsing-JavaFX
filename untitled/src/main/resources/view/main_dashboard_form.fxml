@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="568.0" prefWidth="879.0" stylesheets="@../style/dashboard_form_style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.codeschool.libry_management_system.controller.controller.MainDashboardFormController">
+   <children>
+      <AnchorPane fx:id="mainButtonPane" layoutX="-45.0" layoutY="-1.0" prefHeight="568.0" prefWidth="251.0">
+         <children>
+            <Button layoutX="70.0" layoutY="145.0" mnemonicParsing="false" onAction="#btnManageBooksOnAction" prefHeight="35.0" prefWidth="182.0" styleClass="side_corner_round_button" text="Manage books">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="70.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnManageMembersOnAction" prefHeight="35.0" prefWidth="182.0" styleClass="side_corner_round_button" text="Manage members">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="70.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnManageAuthorsandPublisherOnAction" prefHeight="35.0" prefWidth="182.0" styleClass="side_corner_round_button" text="ManageAuthors and Publisher">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="70.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnBorrowBookRecordsOnAction" prefHeight="35.0" prefWidth="182.0" styleClass="side_corner_round_button" text="Borrow Book Record">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="87.0" fitWidth="122.0" layoutX="106.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/boy%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="43.0" layoutX="127.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/log-out%201.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="70.0" layoutY="442.0" mnemonicParsing="false" onAction="#btnReturnBookRecordOnAction" prefHeight="35.0" prefWidth="182.0" styleClass="side_corner_round_button" text="Return Book Record">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainPane" layoutX="207.0" prefHeight="568.0" prefWidth="688.0">
+         <children>
+            <AnchorPane layoutX="37.0" layoutY="383.0" prefHeight="164.0" prefWidth="616.0" styleClass="sub_pane">
+               <children>
+                  <Label alignment="CENTER" layoutX="216.0" layoutY="25.0" prefHeight="49.0" prefWidth="361.0" text="Find your favorite author">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="322.0" layoutY="91.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="152.0" styleClass="round-button-black" text="Manage others">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="151.0" fitWidth="214.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/undraw_writer_q06d%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="36.0" layoutY="202.0" prefHeight="164.0" prefWidth="616.0" styleClass="sub_pane">
+               <children>
+                  <Label alignment="CENTER" layoutX="28.0" layoutY="24.0" prefHeight="49.0" prefWidth="361.0" text="Add a book to your collection">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="123.0" layoutY="88.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="152.0" styleClass="round-button-black" text="Book Records">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="143.0" fitWidth="186.0" layoutX="409.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/undraw_save_to_bookmarks_re_8ajf%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="38.0" layoutY="15.0" prefHeight="164.0" prefWidth="616.0" styleClass="sub_pane">
+               <children>
+                  <ImageView fitHeight="133.0" fitWidth="205.0" layoutX="24.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/undraw_bookshelves_re_lxoy%201.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="202.0" layoutY="21.0" prefHeight="57.0" prefWidth="396.0" text="Manage your all books">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="319.0" layoutY="88.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="152.0" styleClass="round-button-black" text="Manage Books">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="568.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.codeschool.libry_management_system.controller.controller.sub.ManageAuthorsAndPublishersFormController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="541.0" prefWidth="329.0">
+         <children>
+            <Label alignment="CENTER" layoutX="47.0" layoutY="20.0" prefHeight="27.0" prefWidth="219.0" text="Manage Publisher">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPublisherID" layoutX="41.0" layoutY="70.0" onAction="#txtPublisherOnAction" prefHeight="25.0" prefWidth="255.0" promptText="Publisher ID" />
+            <TextField fx:id="txtPublisherName" layoutX="41.0" layoutY="107.0" prefHeight="25.0" prefWidth="255.0" promptText="Publisher Name" />
+            <TextField fx:id="txtPublisherLocation" layoutX="41.0" layoutY="144.0" prefHeight="25.0" prefWidth="255.0" promptText="Publisher Location" />
+            <TextField fx:id="txtPublisherContact" layoutX="41.0" layoutY="185.0" prefHeight="25.0" prefWidth="255.0" promptText="Publisher Contact" />
+            <Button layoutX="41.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnPublisherSaveOnAction" text="Save" />
+            <Button layoutX="105.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnPublisherUpdateOnAction" text="Update" />
+            <Button layoutX="179.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnPublisherDeleteOnAction" text="Delete" />
+            <Button layoutX="250.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnPublisherClearOnAction" text="Clear" />
+            <TableView fx:id="tblPublisher" layoutX="8.0" layoutY="271.0" onMouseClicked="#tblPublisherOnMouseClick" prefHeight="266.0" prefWidth="315.0">
+              <columns>
+                <TableColumn fx:id="colPublisherID" prefWidth="65.0" text="ID" />
+                <TableColumn fx:id="colPublisherName" prefWidth="121.0" text="Name" />
+                  <TableColumn fx:id="colPublisherContact" prefWidth="128.0" text="Contact" />
+                  <TableColumn minWidth="0.0" prefWidth="0.0" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="344.0" layoutY="14.0" prefHeight="541.0" prefWidth="329.0">
+         <children>
+            <Label alignment="CENTER" layoutX="71.0" layoutY="21.0" prefHeight="27.0" prefWidth="219.0" text="Manage Authors">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAuthorID" layoutX="37.0" layoutY="72.0" onAction="#txtAuthorOnAction" prefHeight="25.0" prefWidth="255.0" promptText="Author ID" />
+            <TextField fx:id="txtAuthorName" layoutX="37.0" layoutY="109.0" prefHeight="25.0" prefWidth="255.0" promptText="Author Name" />
+            <TextField fx:id="txtAuthorContacts" layoutX="37.0" layoutY="146.0" prefHeight="25.0" prefWidth="255.0" promptText="Author Contacts" />
+            <Button layoutX="38.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnAuthorSaveOnAction" text="Save" />
+            <Button layoutX="102.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnAuthorUpdateOnAction" text="Update" />
+            <Button layoutX="176.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnAuthorDeleteOnAction" text="Delete" />
+            <Button layoutX="247.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnAuthorClearOnAction" text="Clear" />
+            <TableView fx:id="tblAuthor" layoutX="7.0" layoutY="271.0" onMouseClicked="#tblAuthorsOnMouseClick" prefHeight="266.0" prefWidth="315.0">
+               <columns>
+                  <TableColumn fx:id="colAuthorID" prefWidth="65.0" text="ID" />
+                  <TableColumn fx:id="colAuthorName" prefWidth="121.0" text="Name" />
+                  <TableColumn fx:id="colAuthorContact" prefWidth="128.0" text="Contact" />
+                  <TableColumn minWidth="0.0" prefWidth="0.0" />
+               </columns>
+            </TableView>
+            <Separator layoutX="-2.0" layoutY="-13.0" orientation="VERTICAL" prefHeight="568.0" prefWidth="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
